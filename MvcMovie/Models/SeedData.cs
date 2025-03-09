@@ -1,10 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using MvcMovie.Data;
-using System;
-using System.Linq;
-
-namespace MvcMovie.Models;
+using MvcMovie.Models;
 
 public static class SeedData
 {
@@ -19,36 +15,46 @@ public static class SeedData
          {
             return;   // DB has been seeded
          }
+
          context.Movie.AddRange(
              new Movie
              {
-                Title = "When Harry Met Sally",
+                Title = "Meet The Mormons",
                 ReleaseDate = DateTime.Parse("1989-2-12"),
-                Genre = "Romantic Comedy",
-                Price = 7.99M
+                Genre = "Documentary",
+                Rating = "PG",
+                Price = 7.99M,
+                ImagePath = "/images/MeetTheMormons.png"
              },
              new Movie
              {
-                Title = "Ghostbusters ",
+                Title = "Ephram's Rescue",
                 ReleaseDate = DateTime.Parse("1984-3-13"),
-                Genre = "Comedy",
-                Price = 8.99M
+                Genre = "Drama",
+                Rating = "PG",
+                Price = 8.99M,
+                ImagePath = "/images/EphramsRescue.png"
              },
              new Movie
              {
-                Title = "Ghostbusters 2",
+                Title = "17 Miracles",
                 ReleaseDate = DateTime.Parse("1986-2-23"),
-                Genre = "Comedy",
-                Price = 9.99M
+                Genre = "Drama",
+                Rating = "PG",
+                Price = 9.99M,
+                ImagePath = "/images/17Miracles.png"
              },
              new Movie
              {
-                Title = "Rio Bravo",
+                Title = "The RM",
                 ReleaseDate = DateTime.Parse("1959-4-15"),
-                Genre = "Western",
-                Price = 3.99M
+                Genre = "Comedy",
+                Rating = "PG",
+                Price = 3.99M,
+                ImagePath = "/images/TheRM.png"
              }
          );
+
          context.SaveChanges();
       }
    }

@@ -7,21 +7,26 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+.h1 {
+   color: #FF5733; /* Bright red */
+}
+
 a {
-  color: #0077cc;
+   color: #FF5733; /* Bright red */
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+   color: #ffffff; /* White */
+   background-color: #FFC300; /* Bright yellow */
+   border-color: #FF5733; /* Bright red */
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+   color: #ffffff; /* White */
+   background-color: #FF5733; /* Bright red */
+   border-color: #FFC300; /* Bright yellow */
 }
+
 
 .border-top {
   border-top: 1px solid #e5e5e5;

@@ -12,6 +12,21 @@ html {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
+h1 {
+   color: #FF5733; /* Bright red */
+}
+
+body {
+   background-color: #F5F5DC; /* Example: Beige */
+}
+
+td {
+   background-color: #F5F5DC; /* Example: Beige */
+}
+
+background
+
+
 html {
   position: relative;
   min-height: 100%;
